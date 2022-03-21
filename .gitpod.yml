@@ -1,0 +1,14 @@
+tasks:
+  - init: pip3 install jupyter pandas matplotlib # runs during prebuild
+    command: echo 'start script'
+
+ports:
+  - port: 9000-9002
+    onOpen: ignore
+  - port: 8888
+    onOpen: open-browser
+    
+vscode:
+  extensions: 
+    - ms-toolsai.jupyter
+    - ms-python.python
