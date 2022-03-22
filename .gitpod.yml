@@ -5,7 +5,7 @@ tasks:
       pip3 install jupyter pandas matplotlib
 
 ports:
-  - port: 9000-9002
+  - port: 9000-9007
     onOpen: ignore
   - port: 8888
     onOpen: open-browser
