@@ -1,6 +1,8 @@
 tasks:
-  - init: pip3 install jupyter pandas matplotlib # runs during prebuild
-    command: echo 'start script'
+  - name: install deps
+    command: |
+      cd /workspace/excel2python
+      pip3 install jupyter pandas matplotlib
 
 ports:
   - port: 9000-9002
