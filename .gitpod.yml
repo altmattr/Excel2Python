@@ -2,7 +2,7 @@ tasks:
   - name: install deps
     command: |
       cd /workspace/excel2python
-      pip3 install jupyter pandas matplotlib
+      pip3 install jupyter pandas matplotlib openpyxl
 
 ports:
   - port: 9000-9007
